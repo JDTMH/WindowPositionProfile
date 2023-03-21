@@ -79,7 +79,7 @@ $global:config = New-Object System.Collections.ArrayList
 $configpath = $env:USERPROFILE + "\windowlayout.config"
 
 #Creating an array with the window names to record size and position
-$windows = "Teams","Outlook","Vivaldi", "Notepad++", "Active Directory Users and Computers", "DHCP", "Microsoft Endpoint Configuration Manager", "OneNote", "Excel", "Word", "Spotify", "PDQ Deploy", "PDQ Inventory"
+$windows = "Teams","Outlook","Vivaldi","Notepad++","OneNote","Excel","Word","Spotify"
 
 #Read and record window sizes and positions
 $windows | ForEach-Object { GetWindowData($_) }
